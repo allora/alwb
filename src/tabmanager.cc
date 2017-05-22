@@ -17,7 +17,7 @@ void TabManager::AddTab(bool changeToNewTab)
 {
     auto tabInfo = std::make_shared<TabInfo>();
     tabInfo->isValid = true;
-    const char* url = "about::blank";
+    const char* url = "https://www.google.com";
     tabInfo->tab.LoadURL(url);
 
     m_tabs.push_back(tabInfo);
